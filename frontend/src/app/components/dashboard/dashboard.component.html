@@ -1,0 +1,20 @@
+<div class="drawer drawer-mobile">
+    <input id="my-drawer-3" type="checkbox" class="drawer-toggle" />
+    <div class="drawer-content flex flex-col">
+        <app-navbar></app-navbar>
+
+        
+            <router-outlet></router-outlet>
+         
+    </div> 
+    <div class="drawer-side">
+      <label for="my-drawer-3" class="drawer-overlay"></label> 
+
+      <ul class="menu bg-blue-900 text-white p-4 w-80 bg-base-100 text-base-content">
+        <!-- Sidebar content here -->
+        <a class="hidden lg:contents mb-10 text-lg">Dashboard</a>
+        <li class="mt-10"><a routerLink='/dash/view-records'>Welcome</a></li>
+        <li><a routerLink='/dash/single-record'>Mark Attendance</a></li>
+      </ul>
+    </div>
+</div>
